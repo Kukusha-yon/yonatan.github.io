@@ -65,37 +65,134 @@ a {
 .main-resume:hover{
     border-color: #537080;
 }
-@media(max-width: 768px){
-    .main img{
-        margin-top: 120px;
-        width: 260px;
-
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    .main {
+        gap: 25px;
     }
-    .main h1{
-        margin-top: 50px;
+
+    .main img {
+        margin-top: 80px;
+        width: 180px;
+    }
+
+    .main h1 {
         width: 90%;
-        font-size: 50px;
+        font-size: 40px;
     }
-    .main p{
+
+    .main p {
+        width: 80%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .main-action {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    .main-connect, .main-resume {
+        padding: 15px 30px;
+        border-radius: 30px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .main img {
+        margin-top: 100px;
+        width: 220px;
+    }
+
+    .main h1 {
+        width: 80%;
+        font-size: 60px;
+    }
+
+    .main p {
+        width: 70%;
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .main-action {
+        flex-direction: row;
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    .main-connect, .main-resume {
+        padding: 20px 40px;
+        border-radius: 40px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .main {
+        gap: 30px;
+    }
+
+    .main img {
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    .main h1 {
+        width: 75%;
+        font-size: 80px;
+    }
+
+    .main p {
         width: 60%;
-        font-size: 18px;
-        line-height: 32px;
-        margin: 10px 0px;
+        font-size: 22px;
+        line-height: 38px;
+    }
 
+    .main-action {
+        gap: 25px;
+        font-size: 22px;
     }
-    .main-action{
-        gap: 16px;
-        font-size: 18px;
-        font-weight: 500px;
-        margin-bottom: 50px;
-    }
-    .main-connect{
-        padding: 20px;
-        border-radius: 40px;
 
+    .main-connect {
+        padding: 22px 40px;
     }
-    .main-resume{
-        padding: 20px 50px;
-        border-radius: 40px;
+
+    .main-resume {
+        padding: 22px 65px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .main {
+        gap: 35px;
+    }
+
+    .main h1 {
+        width: 70%;
+        font-size: 90px;
+    }
+
+    .main p {
+        width: 50%;
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .main-action {
+        font-size: 24px;
+    }
+
+    .main-connect {
+        padding: 25px 45px;
+        border-radius: 50px;
+    }
+
+    .main-resume {
+        padding: 25px 75px;
+        border-radius: 50px;
     }
 }

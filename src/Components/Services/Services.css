@@ -72,41 +72,162 @@
     transform: scale(1.05);
     transition: 0.4s;
 }
-@media(max-width: 768px){
-    .services{
-        align-items: start;
-        gap: 70px;
-        margin: 20px 70px;
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    .services {
+        gap: 40px;
+        margin: 40px 20px;
     }
-    .services-title h1{
-        padding: 0;
-        font-size: 50px;
 
+    .services-title h1 {
+        font-size: 40px;
+        padding: 0 15px;
     }
-    .services-title img{
-        width: 130px;
-        margin-right: -20px;
 
+    .services-title img {
+        width: 100px;
+        right: -10px;
     }
-    .services-format{
+
+    .services-container {
+        grid-template-columns: 1fr;
         gap: 20px;
-        padding: 32px;
+    }
 
+    .services-format {
+        padding: 30px;
     }
-    .services-format h2{
-        font-size: 28px;
-    }
-    .services-format p{
-        font-size: 18px;
-        line-height: 32px;
-        max-width: 300px;
-    }
-    .services-readMore img{
-        width: 20px;
 
+    .services-format h3 {
+        font-size: 24px;
     }
-    .services-container{
+
+    .services-format h2 {
+        font-size: 24px;
+    }
+
+    .services-format p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .services-readMore img {
+        width: 18px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .services {
+        gap: 50px;
+        margin: 50px 70px;
+    }
+
+    .services-title h1 {
+        font-size: 50px;
+    }
+
+    .services-title img {
+        width: 130px;
+        right: -20px;
+    }
+
+    .services-container {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+    }
+
+    .services-format {
+        padding: 32px;
+    }
+
+    .services-format h3 {
+        font-size: 26px;
+    }
+
+    .services-format h2 {
+        font-size: 26px;
+    }
+
+    .services-format p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .services-readMore img {
+        width: 20px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .services {
+        gap: 60px;
+        margin: 60px 100px;
+    }
+
+    .services-title h1 {
+        font-size: 60px;
+        padding: 0 20px;
+    }
+
+    .services-title img {
+        width: 150px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 35px;
+    }
+
+    .services-format {
+        padding: 40px;
+    }
+
+    .services-format h3 {
+        font-size: 26px;
+    }
+
+    .services-format h2 {
+        font-size: 26px;
+    }
+
+    .services-format p {
+        font-size: 14px;
+        line-height: 32px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .services {
+        gap: 80px;
+        margin: 80px 170px;
+    }
+
+    .services-title h1 {
+        font-size: 80px;
+        padding: 0 30px;
+    }
+
+    .services-container {
+        gap: 40px;
+    }
+
+    .services-format {
+        padding: 60px;
+    }
+
+    .services-format h3 {
+        font-size: 28px;
+    }
+
+    .services-format h2 {
+        font-size: 28px;
+    }
+
+    .services-format p {
+        font-size: 14px;
+        line-height: 40px;
     }
 }

@@ -56,51 +56,126 @@
     display: none;
    
 }
-@media(max-width: 768px){
-    .navbar{
-        margin: 20px 50px;
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    .navbar {
+        margin: 10px 20px;
     }
-    .nav-connect{
+
+    .logo {
+        width: 150px;
+    }
+
+    .nav-menu {
         display: none;
     }
-    .nav-mob-open{
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mob-open {
         display: block;
         position: fixed;
-        right: 30px;
+        right: 20px;
+        width: 40px;
     }
-    .nav-mob-close{
+
+    .nav-mob-close {
         display: block;
         position: relative;
-        top: 30px;
-        left: 290px;
-        width: 30px;
-
+        top: 20px;
+        left: 240px;
+        width: 25px;
     }
-    .nav-menu{
+
+    .nav-menu.active {
+        display: flex;
         position: fixed;
         flex-direction: column;
         align-items: start;
         top: 0;
-        gap: 30px;
+        gap: 20px;
         background-color: #1F0016;
-        width: 350px;
+        width: 280px;
         height: 100%;
         z-index: 2;
         transition: right 0.5s;
-        right: -350px;
+        right: 0;
     }
-    .nav-menu li{
-        font-size: 30px;
-        padding-left: 100px;
-        flex-direction: row;
-        gap: 20px;
+
+    .nav-menu li {
+        font-size: 24px;
+        padding-left: 40px;
     }
-    .nav-mob-open{
-        width: 50px;
-        
-    }
-    .nav-mob-close{
-        width: 50px;
-    }
-    
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .nav-menu.active {
+        width: 350px;
+    }
+
+    .nav-menu li {
+        font-size: 28px;
+        padding-left: 60px;
+    }
+
+    .nav-mob-open, .nav-mob-close {
+        width: 45px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar {
+        margin: 0px 80px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        font-size: 18px;
+    }
+
+    .nav-connect {
+        display: block;
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+    .nav-mob-open, .nav-mob-close {
+        display: none;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .navbar {
+        margin: 0px 100px;
+    }
+
+    .nav-menu {
+        gap: 50px;
+        font-size: 20px;
+    }
+
+    .nav-connect {
+        padding: 10px 40px;
+        font-size: 22px;
+    }
+}
+
