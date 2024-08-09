@@ -1,0 +1,101 @@
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+
+}
+.main img{
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 50%;
+
+
+}
+
+.main h1{
+    text-align: center;
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+}
+.main h1 span{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main p{
+    width: 50%;
+    text-align:  center;
+    font-size: 24px;
+    line:height: 40px;
+
+}
+
+.main-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from the parent element */
+  }
+
+.main-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    cursor: pointer;
+}
+.main-resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+}
+.main-connect:hover{
+    border: 2px solid white;
+}
+.main-resume:hover{
+    border-color: #537080;
+}
+@media(max-width: 768px){
+    .main img{
+        margin-top: 120px;
+        width: 260px;
+
+    }
+    .main h1{
+        margin-top: 50px;
+        width: 90%;
+        font-size: 50px;
+    }
+    .main p{
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0px;
+
+    }
+    .main-action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500px;
+        margin-bottom: 50px;
+    }
+    .main-connect{
+        padding: 20px;
+        border-radius: 40px;
+
+    }
+    .main-resume{
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
+}
