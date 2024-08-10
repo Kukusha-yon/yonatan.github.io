@@ -11,11 +11,11 @@ const Main = () => {
         {" "}
         <span>I am Yonatan, </span>MERN stack developer
       </h1>
-      <p>
+      {/* <p>
         I specialize in crafting dynamic and responsive web applications. From
         sleek user interfaces to robust server-side scripting, I have the skills
         and experience to turn your ideas into reality.
-      </p>
+      </p> */}
       <div className="main-action">
         <div className="main-connect">
           <AnchorLink className="anchor-link" offset={50} href="#contact">
